@@ -8,6 +8,7 @@ export default defineConfig(({ mode }) => {
 
   return {
     plugins: [react()],
-    base: env.VITE_BASE_PATH || '/react-vite-deploy/',
+    // Vercel serves from the domain root; other hosts (e.g. GitHub Pages) use the repo subpath
+    base: env.VITE_BASE_PATH || (process.env.VERCEL ? '/' : '/react-vite-deploy/'),
   }
 })

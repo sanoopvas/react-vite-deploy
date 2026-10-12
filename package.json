@@ -27,6 +27,7 @@
     "@nivo/line": "^0.84.0",
     "@nivo/pie": "^0.84.0",
     "@nivo/stream": "^0.84.0",
+    "@vercel/speed-insights": "^2.0.0",
     "apexcharts": "^4.7.0",
     "formik": "^2.4.5",
     "plotly.js": "^3.0.1",
